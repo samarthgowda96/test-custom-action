@@ -33,6 +33,45 @@
   resolved "https://registry.npmjs.org/@fastify/busboy/-/busboy-2.1.0.tgz#0709e9f4cb252351c609c6e6d8d6779a8d25edff"
   integrity sha512-+KpH+QxZU7O4675t3mnkQKcZZg56u+K/Ct2K+N2AZYNVK8kyeo/bI18tI8aPm3tvNNRyTWfj6s5tnGNlcbQRsA==
 
+"@ihr-radioedit/errors@^7.0.0":
+  version "7.0.0"
+  resolved "https://npm.pkg.github.com/download/@ihr-radioedit/errors/7.0.0/3b3861ef79bcddab5c5253af5a73610a079f949c#3b3861ef79bcddab5c5253af5a73610a079f949c"
+  integrity sha512-8F4ZMBY5FJY+JsOOPoiffLJ4OO9UqJVlwtxONMdYWHtGSzAKYmoLdeojwyV5EV8FUfd7HiDJv7uSCMMSPYqMBg==
+
+"@ihr-radioedit/logger@^7.0.1":
+  version "7.0.1"
+  resolved "https://npm.pkg.github.com/download/@ihr-radioedit/logger/7.0.1/b53a05a451e3e1b54c08317aae79fadccae92c0d#b53a05a451e3e1b54c08317aae79fadccae92c0d"
+  integrity sha512-TKQvytl+vP5CHOnN4CdHL2Ap6bO9bLGuvJl9sswn8Hzkpc+F0D03KN04wFJTGgVbkoyZFiOSvNHs17J0BtRXew==
+  dependencies:
+    "@ihr-radioedit/errors" "^7.0.0"
+    "@ihr-radioedit/sdk-utils" "^7.0.1"
+
+"@ihr-radioedit/sdk-network@^7.0.1":
+  version "7.0.1"
+  resolved "https://npm.pkg.github.com/download/@ihr-radioedit/sdk-network/7.0.1/6cae6c55f2b1f3a5da5ae17e2c449403428e548c#6cae6c55f2b1f3a5da5ae17e2c449403428e548c"
+  integrity sha512-RIP0x5gprDCITNgltQSqs39lSnuvvRbhikDVLhVljgtSNB7NyWZ9EcFPBZ4+w4NNwXnpsJKriVC/wt+kKMSfoA==
+  dependencies:
+    "@ihr-radioedit/errors" "^7.0.0"
+    "@ihr-radioedit/logger" "^7.0.1"
+    "@ihr-radioedit/sdk-utils" "^7.0.1"
+    purify-ts "^2.0.1"
+    safe-stable-stringify "^2.4.3"
+    tslib "^2.4.0"
+
+"@ihr-radioedit/sdk-utils@^7.0.1":
+  version "7.0.1"
+  resolved "https://npm.pkg.github.com/download/@ihr-radioedit/sdk-utils/7.0.1/df37f49aeb20ddd4b25fff7ba34af4f9e1130731#df37f49aeb20ddd4b25fff7ba34af4f9e1130731"
+  integrity sha512-l/bx0tdbUCUUMbp1VVSJTThQq8P6u7qYDsJXnAW5nFJs/UtT5s/ZoXLB7aRgwVbn4PaVb9dzLXGoWPkOdJQ6/A==
+
+"@ihr-radioedit/service-auth@7.0.1":
+  version "7.0.1"
+  resolved "https://npm.pkg.github.com/download/@ihr-radioedit/service-auth/7.0.1/b1ca54a2bbd556f86a64fd7b09f3ca51d843161a#b1ca54a2bbd556f86a64fd7b09f3ca51d843161a"
+  integrity sha512-u+VRkWHUpBGpwYXMx0wg9dLzz2GfGGgh3Fy9eUSD1FaoIoVXEox4gvsaqHs7Fr8rP19JO7hVwigqJOSOoSi0aA==
+  dependencies:
+    "@ihr-radioedit/sdk-network" "^7.0.1"
+    "@ihr-radioedit/sdk-utils" "^7.0.1"
+    purify-ts "^2.0.1"
+
 "@octokit/auth-token@^4.0.0":
   version "4.0.0"
   resolved "https://registry.npmjs.org/@octokit/auth-token/-/auth-token-4.0.0.tgz#40d203ea827b9f17f42a29c6afb93b7745ef80c7"
@@ -113,6 +152,11 @@
   dependencies:
     "@octokit/openapi-types" "^19.1.0"
 
+"@types/json-schema@7.0.15":
+  version "7.0.15"
+  resolved "https://registry.npmjs.org/@types/json-schema/-/json-schema-7.0.15.tgz#596a1747233694d50f6ad8a7869fcb6f56cf5841"
+  integrity sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==
+
 before-after-hook@^2.2.0:
   version "2.2.3"
   resolved "https://registry.npmjs.org/before-after-hook/-/before-after-hook-2.2.3.tgz#c51e809c81a4e354084422b9b26bad88249c517c"
@@ -129,6 +173,23 @@ once@^1.4.0:
   integrity sha512-lNaJgI+2Q5URQBkccEKHTQOPaXdUxnZZElQTZY0MFUAuaEqe1E+Nyvgdz/aIyNi6Z9MzO5dv1H8n58/GELp3+w==
   dependencies:
     wrappy "1"
+
+purify-ts@^2.0.1:
+  version "2.0.3"
+  resolved "https://registry.npmjs.org/purify-ts/-/purify-ts-2.0.3.tgz#c359fa9a956ad18e8334802e26af1b46c603b90f"
+  integrity sha512-RiPOlX4L+eggnbEdwGV34t7iRSPK5d37nKPZXSu8G5mTUhxbEjPpThRFuEV4GL/T6zEJQ+ZeiuNoBk61VJvszg==
+  dependencies:
+    "@types/json-schema" "7.0.15"
+
+safe-stable-stringify@^2.4.3:
+  version "2.4.3"
+  resolved "https://registry.npmjs.org/safe-stable-stringify/-/safe-stable-stringify-2.4.3.tgz#138c84b6f6edb3db5f8ef3ef7115b8f55ccbf886"
+  integrity sha512-e2bDA2WJT0wxseVd4lsDP4+3ONX6HpMXQa1ZhFQ7SU+GjvORCmShbCMltrtIDfkYhVHrOcPtj+KhmDBdPdZD1g==
+
+tslib@^2.4.0:
+  version "2.6.2"
+  resolved "https://registry.npmjs.org/tslib/-/tslib-2.6.2.tgz#703ac29425e7b37cd6fd456e92404d46d1f3e4ae"
+  integrity sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==
 
 tunnel@^0.0.6:
   version "0.0.6"
