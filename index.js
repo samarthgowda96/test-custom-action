@@ -1,4 +1,5 @@
-import { AuthClient } from "@ihr-radioedit/service-auth";
+
+const auth = require("@ihr-radioedit/service-auth");
 const core = require("@actions/core");
 const github = require("@actions/github");
 
