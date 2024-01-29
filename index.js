@@ -1,7 +1,7 @@
 
-const auth = require("@ihr-radioedit/service-auth");
-const core = require("@actions/core");
-const github = require("@actions/github");
+import {AuthClient} from "@ihr-radioedit/service-auth";
+import { notice, setFailed } from "@actions/core";
+import github from "@actions/github";
 
 (
     async () => {
@@ -9,9 +9,9 @@ const github = require("@actions/github");
             const client = AuthClient.auto();
             const me = await client.getMyPrincipal().ifLeft(e => console.error(e)).orDefault(null);
             console.log(me);
-            core.notice("calling our custom action", me)
+            notice("calling our custom action", me)
         }catch(e){
-            core.setFailed(e.message)
+            setFailed(e.message)
         }
     }
 )()
