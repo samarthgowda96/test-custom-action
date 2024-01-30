@@ -15,16 +15,15 @@ export async function validateToken(
         });
     return payload;
   }
-
 (
     async () => {
         try{
             const token = await core.getIDToken();
             const res = validateToken(token);
-            notice("calling our custom action", token)
-            notice("token verified woooo babyyy:", res)
+            core.notice("calling our custom action", token)
+            core.notice("token verified woooo babyyy:", res)
         }catch(e){
-            setFailed(e.message)
+            core.setFailed(e.message)
         }
     }
 )()
