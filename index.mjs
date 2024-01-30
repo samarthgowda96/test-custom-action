@@ -1,6 +1,6 @@
 
 
-import { notice, setFailed, core } from "@actions/core";
+import * as core from "@actions/core";
 import { createRemoteJWKSet, jwtVerify } from "jose";
 
 
@@ -15,7 +15,7 @@ export async function validateToken(
         });
     return payload;
   }
-  
+
 (
     async () => {
         try{
