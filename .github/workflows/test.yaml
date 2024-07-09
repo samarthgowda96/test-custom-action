@@ -1,22 +1,17 @@
-name: Org Actions Test
+name: Hello World
 
-# TODO: find out how to limit push action to main.
-on: [push, pull_request]
-
-permissions:
-  contents: read
+on:
+  workflow_dispatch:
 
 jobs:
-  stuff:
+  print-hello-world:
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      id-token: write # This is required for requesting the OIDC JWT
-    name: Node 20
+
     steps:
       - uses: actions/setup-node@v2
         with:
           node-version: "20"
       - uses: actions/checkout@v3
+
       - id: get_creds
         uses: samarthgowda96/test-my-action/image-create@main
