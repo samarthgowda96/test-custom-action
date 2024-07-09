@@ -19,7 +19,7 @@ jobs:
           node-version: "20"
       - uses: actions/checkout@v3
       - id: get_creds
-        uses: samarthgowda96/test-my-action/image-create
+        uses: test-my-action/image-create@main
         with:
           re_environment: "dev"
           # debug: true
