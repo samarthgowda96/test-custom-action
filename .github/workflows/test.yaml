@@ -1,4 +1,4 @@
-name: Org Actions Test
+name: Org Actions Testt
 
 # TODO: find out how to limit push action to main.
 on: [push, pull_request]
