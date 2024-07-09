@@ -19,14 +19,4 @@ jobs:
           node-version: "20"
       - uses: actions/checkout@v3
       - id: get_creds
-
         uses: samarthgowda96/test-my-action/image-create@main
-
-        with:
-          re_environment: "dev"
-          # debug: true
-      # - run: >
-      # curl -i "https://config.dev-radioedit.ihrint.com/graphql"
-      # -H "Authorization: Bearer #
-      # -H "Content-Type: application/json"
-      #--data '{"query": "{application(appId:\"helloworld\"){name}}"}'
