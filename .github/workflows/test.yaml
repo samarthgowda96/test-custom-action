@@ -27,6 +27,6 @@ jobs:
           # debug: true
       # - run: >
       # curl -i "https://config.dev-radioedit.ihrint.com/graphql"
-      # -H "Authorization: Bearer ${{ steps.get_creds.outputs.access_token }}"
+      # -H "Authorization: Bearer #
       # -H "Content-Type: application/json"
       #--data '{"query": "{application(appId:\"helloworld\"){name}}"}'
